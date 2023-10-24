@@ -6,11 +6,12 @@ int main()
     int n;
     cout << "Enter the value";
     cin >> n;
-    int i = 1;
+    int i = 1, sum = 0;
+
     while (i <= n)
     {
-        cout << "*\n";
-        cout << "*";
+        sum += i;
         i++;
+    cout << sum << endl;
     };
 }
