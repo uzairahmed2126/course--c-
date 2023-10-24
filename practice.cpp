@@ -53,7 +53,7 @@ int main()
     // int x, n1;
     // cout << "Enter The Value :-\n ";
     // cin >> x >> n1;
-    // if (a > n)
+    // if (x > n1)
     // {
     //     cout << "Answer is a" << endl;
     // }
@@ -62,9 +62,39 @@ int main()
     //     cout << "Answer is n" << endl;
     // };
 
-    int first;
-    first = cin.get();
-    // first = '1';
-    cout << "value of a is : " << first << endl;
+    int numberNature;
+    cout << "Enter Any Number : ";
+    cin >> numberNature;
+    if (numberNature < 0)
+    {
+        cout << "value is negative : " << numberNature << endl;
+    }
+    else if (numberNature > 0)
+    {
+        cout << "value is positive : " << numberNature << endl;
+    }
+    else
+    {
+        cout << "value is Zero : " << numberNature << endl;
+    };
+
+    // char ch;
+    // cout << "Enter Any Value";
+    // cin >> ch;
+    // if (ch>97)
+    // {
+    //     cout << "It is Lowercase";
+    // }else if(ch>=65||ch<=91){
+    //     cout << "It is Uppercase";
+    // }else {
+
+    // }
+    char ch = 97+25;
+    cout << ch;
+    // int first;
+    // first = cin.get();
+    // // first = '1';
+    // cout << "value of a is : " << first << endl;
+
     return 1;
 }
