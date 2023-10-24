@@ -10,8 +10,11 @@ int main()
 
     while (i <= n)
     {
-        sum += i;
+        if (i % 2 == 0)
+        {
+            sum += i;
+        };
         i++;
-    cout << sum << endl;
     };
+        cout << sum << endl;
 }
