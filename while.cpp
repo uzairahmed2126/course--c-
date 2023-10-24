@@ -17,4 +17,6 @@ int main()
         i++;
     };
         cout << sum << endl;
+        
+
 }
