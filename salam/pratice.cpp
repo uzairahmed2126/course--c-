@@ -6,8 +6,12 @@ class sum
 
 public:
     sum(){
-        firstnum=0;
+        firstnum=0; // default constructor
         secondnum=0;
+    }
+    sum(int a,int b){
+        firstnum = a; // parametrized constructor 
+        secondnum = b;
     }
     void input()
     {
@@ -24,8 +28,8 @@ public:
 
 int main()
 {
-    sum father;
-   // father.input();
+    sum father(1,2);
+    //father.input();
     father.print();
 
     return 1;
