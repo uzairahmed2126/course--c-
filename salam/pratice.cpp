@@ -1,36 +1,35 @@
 #include <iostream>
 using namespace std;
-class sum
-{   
-    int firstnum,secondnum;
+class inharitence
+{
+    int a = 0, b = 0;
 
 public:
-    sum(){
-        firstnum=0; // default constructor
-        secondnum=0;
-    }
-    sum(int a,int b){
-        firstnum = a; // parametrized constructor 
-        secondnum = b;
-    }
-    void input()
+    void sum()
     {
-        cout << "first number : \n";
-        cin >> firstnum;
-        cout << "second num : \n";
-        cin >> secondnum;
-    }
-    void print()
-    {
-        cout << firstnum + secondnum<< endl;
+        cout << "Enter Values of a and b : ";
+        cin >> a >> b;
+        cout << a + b << endl;
     }
 };
 
+class inharitence2
+{
+    char a[10], b[10];
+
+public:
+    void myName()
+    {
+        cout << "Enter First and Second Name : ";
+        cin >> a >> b;
+        cout << a << " " << b;
+    }
+};
 int main()
 {
-    sum father(1,2);
-    //father.input();
-    father.print();
-
+    inharitence arithmetic;
+    arithmetic.sum();
+    inharitence2 name;
+    name.myName();
     return 1;
 }
