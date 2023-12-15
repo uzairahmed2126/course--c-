@@ -11,25 +11,31 @@ public:
         cin >> a >> b;
         cout << a + b << endl;
     }
+    void print(){
+        cout << a << " " << b; 
+    }
 };
 
-class inharitence2
+class inharitence2 : public inharitence
 {
-    char a[10], b[10];
+    char firstName[10], secondName[10];
 
 public:
     void myName()
     {
         cout << "Enter First and Second Name : ";
-        cin >> a >> b;
-        cout << a << " " << b;
+        cin >> firstName >> secondName;
+        cout << firstName << " " << secondName;
+    }
+    void print(){
+        cout << firstName ;
     }
 };
 int main()
 {
-    inharitence arithmetic;
-    arithmetic.sum();
     inharitence2 name;
-    name.myName();
+ 
+    name.sum();
+    name.print();
     return 1;
 }
