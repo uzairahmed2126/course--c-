@@ -11,8 +11,9 @@ public:
         cin >> a >> b;
         cout << a + b << endl;
     }
-    void print(){
-        cout << a << " " << b; 
+    void print()
+    {
+        cout << a << " " << b;
     }
 };
 
@@ -27,14 +28,15 @@ public:
         cin >> firstName >> secondName;
         cout << firstName << " " << secondName;
     }
-    void print(){
-        cout << firstName ;
+    void print()
+    {
+        cout << firstName;
     }
 };
 int main()
 {
     inharitence2 name;
- 
+
     name.sum();
     name.print();
     return 1;
